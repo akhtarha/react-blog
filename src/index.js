@@ -10,21 +10,11 @@ import SingleArticle from "./components/SingleArticle";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 
-const Home = () => {
-  return <h1>This is the Home Page</h1>;
-};
-
-const About = () => {
-  return <h1>This is the About Page</h1>;
-};
-
 ReactDOM.render(
   <BrowserRouter>
     <div>
       <Navbar />
       <Route exact path="/" component={Welcome} />
-      <Route path="/home" component={Home} />
-      <Route path="/about" component={About} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/article/:slug" component={SingleArticle} />
